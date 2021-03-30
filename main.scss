@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    #input-field {
+        height: 50vh;
+        width: 40vw;
+        border: 2px solid rgb(41, 38, 38);
+        margin: 1rem;
+    }
+
+    #result-field {
+        height: 50vh;
+        width: 40vw;
+        border: 2px solid rgb(41, 38, 38);
+        margin: 1rem;
+    }
+}
