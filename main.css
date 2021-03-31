@@ -2,22 +2,34 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 section #input-field {
-  height: 50vh;
+  height: 20vh;
   width: 40vw;
   border: 2px solid #292626;
   margin: 1rem;
 }
 section #result-field {
-  height: 50vh;
-  width: 40vw;
+  height: 20vh;
+  width: 50vw;
   border: 2px solid #292626;
   margin: 1rem;
 }
