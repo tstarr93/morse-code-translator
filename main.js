@@ -12,7 +12,7 @@ translateField.addEventListener("click", (e) => {
     const userInput = input.value;
     let output = "";
 
-// loops over each letter from userInput, splits them into separate characters
+// function to loop over each letter from input, splits them into separate characters
     const loop = (input) => {
         for (index = 0; index < input.length; index++){
             console.log(input.charAt(index));
