@@ -17,23 +17,24 @@ const translate = (input) => {
     const lowerCaseInput = input.toLowerCase();
     
 
-    const indexMatch = (a, b) => {
-        let matches = [];
-
+    const indexMatch = () => {
+        
         for (index = 0; index < input.length; index++){
+            let matches = [];
             // const alphabetIndex = alphabet.indexOf(lowerCaseInput[index]);
 
             for (i = 0; i < i.length; i++) {
-                if (a[index] === b[i]) {
-                    return matches.push(b[i]);
+                if (alphabet.indexOf(lowerCaseInput[index]) === morseAlphabet[i]) {
+                    return matches.push(morseAlphabet[i]);
                 };
+                
             };
             
         };
-        return matches;
+            return matches;
         
     };
-    console.log(indexMatch(alphabet, morseAlphabet));
+    console.log(indexMatch());
         
 };
 
