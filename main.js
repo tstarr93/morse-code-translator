@@ -14,16 +14,26 @@ const morseAlphabet = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", 
 // put that string to result field
 
 const translate = (input) => {
-    for (index = 0; index < input.length; index++){
-        const alphabetIndex = alphabet.indexOf(input[index]);
+    const lowerCaseInput = input.toLowerCase();
+    
+
+    const indexMatch = (a, b) => {
+        let matches = [];
+
+        for (index = 0; index < input.length; index++){
+            // const alphabetIndex = alphabet.indexOf(lowerCaseInput[index]);
+
+            for (i = 0; i < i.length; i++) {
+                if (a[index] === b[i]) {
+                    return matches.push(b[i]);
+                };
+            };
+            
+        };
+        return matches;
         
-        const morseIndex = alphabetIndex;
-
-        console.log(morseIndex);
-
-        result.innerHTML = `${morseIndex}`;
     };
-
+    console.log(indexMatch(alphabet, morseAlphabet));
         
 };
 
